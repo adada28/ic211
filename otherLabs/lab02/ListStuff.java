@@ -7,14 +7,24 @@ public class ListStuff{
         return node;
     }
 
+    public static StringNode addToBack(String s, StringNode Nold){
+        if (Nold == null){
+            Nold = new StringNode();
+            Nold.data = s;
+            Nold.next = null;
+            return Nold;
+        }
+        Nold.next = addToBack(s, Nold.next);
+        return Nold;
+    }
     // listToArray(N) returns a reference to an array containing the same strings
     //as in the list N (in the order they were received)
     public static String[] listToArray(StringNode N){
         StringNode temp = N;
-        int count = 0;
+        int count = 1;
         while(temp.next != null){
             count++;
-            temp = N.next;
+            temp = temp.next;
         }
         String[] words = new String[count];
         for(int i = 0; i < count; i++){
