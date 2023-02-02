@@ -1,3 +1,5 @@
+//Help and Guidance from Michael Wieland
+
 import java.util.*;
 public class Lab03{
     public static void main (String[] args){
@@ -10,14 +12,15 @@ public class Lab03{
         Point one = new Point(0,0);
         Point two = new Point(0,0);
         Box B = new Box(one);
-        
-        while(choice != "done"){
+
+        //Loops through input and operations until done is entered
+        while(!choice.equals("done")){
             choice = sc.next();
 
             if(choice.equals("add")){
                 Point a = Point.read(sc);
                 if(addamount == 0){
-                    two.setY(a.getX());
+                    two.setX(a.getX());
                     two.setY(a.getY());
                     B.change2(a,a);
                 }
@@ -45,7 +48,7 @@ public class Lab03{
                 System.out.println(str);
             }
 
-            else{
+            else if(!(choice.equals("done"))){
                 System.out.println("Error! Unknown command \"" + choice + "\"!");
             }
         }

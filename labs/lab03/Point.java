@@ -1,3 +1,4 @@
+// Attended EI with Capt Escamilla on 01/27/23 and 01/31/23 on methodology
 import java.util.*;
 public class Point{
     private double x,y;
@@ -17,21 +18,13 @@ public class Point{
     public void setY(double y){
         this.y = y;
     }
-    /*
-    public void setminY(double y){
-        this.y = y; 
-    }
 
-    public void setminX(double x){
-        this.x = x; 
-    }
-*/
+    //Inititilizes Points
     public Point(double px, double py){
         x = px;
         y = py;
     }
-    
-
+    //Reads in a single point
     public static Point read(Scanner sc){
         double x = sc.nextDouble();
         double y = sc.nextDouble();
