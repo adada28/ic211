@@ -8,7 +8,7 @@ public class Rotor{
         this.alphabet = m; 
         this.topChar = top;
 
-        while(this.topChar != this.alphabet.charAt(0)){
+        while(this.topChar != this.findChar(0)){
             rotate();
         }
     }
@@ -19,7 +19,7 @@ public class Rotor{
 
     public void rotate(){
 
-        char end = this.alphabet.charAt(26);
+        char end = this.findChar(26);
         
         String sub = this.alphabet.substring(0,26);
 
