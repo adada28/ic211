@@ -1,0 +1,6 @@
+import java.util.*;
+
+public class Enigma{
+    private String[] codes = {"#GNUAHOVBIPWCJQXDKRYELSZFMT","#EJOTYCHMRWAFKPUZDINSXBGLQV", "#BDFHJLNPRTVXZACEGIKMOQSUWY", "#NWDKHGXZVRIFJBLMAOPSCYUTQE", "#TGOWHLIFMCSZYRVXQABUPEJKND"};
+    private Rotor r1,r2,r3; 
+}
