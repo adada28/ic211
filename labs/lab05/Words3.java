@@ -6,7 +6,7 @@ public class Words3 {
       System.exit(1);
     }
 
-    // Create a RandomWordLit object and generate random words with it.
+    // Create a RandomWordLitRhyme object and generate random words with it.
     RandomWordLitRhyme rand = new RandomWordLitRhyme(Long.parseLong(args[0]));
     int N = Integer.parseInt(args[1]);
     for(int i = 0; i < N; i++)
