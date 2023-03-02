@@ -1,8 +1,8 @@
 import java.util.Random;
-public class RedDot extends MovingDot{
+public class BlueDot extends MovingDot{
     Random rand;
     
-    public RedDot(int r, int c){
+    public BlueDot(int r, int c){
         super(r,c);
         this.rand = new Random();
     }
@@ -17,10 +17,11 @@ public class RedDot extends MovingDot{
         else if(super.direction == 8){
             super.direction = 0;
         }
+        
         super.step();
     }
 
     public String toString(){
-        return super.toString() + "r";
+        return super.toString() + "b";
     }
 }
