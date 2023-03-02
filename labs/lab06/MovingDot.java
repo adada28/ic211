@@ -36,9 +36,10 @@ public class MovingDot extends Dot{
         }
         
     }
-
+/*
     public static void main(String[] args){
         MovingDot x = new MovingDot(50,50);
         System.out.println(x);
     }
+    */
 }
