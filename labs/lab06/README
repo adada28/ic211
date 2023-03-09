@@ -1,0 +1,32 @@
+Pre Step 3:
+My program makes use of all of the four pillars of Object Oriented Programming. 
+Encapsulation is grouping data and methods together. I did that by grouping methods 
+that involed moving the dots in one class rather than multiple. Also, my program made use
+of instance methods. For example, the step function was an instance method that was called
+in the Lab06.java file. Another way encapsulation was used was by adding constructors.
+The constructors made implementing each different dot much easier which will lead into 
+another pillar of OOP. The next pillar of OOP used was data hiding. Data Hiding enforces 
+separation of interface and implementation. The easiest way to see this is through 
+public and private variables. The private variables are the ones we do not want the user
+to interact with directly. In this program, I made my random and counts (BlueDot) private.
+Inheritance was used because we extend functionality of a class. The MovingDot class is 
+an extension of the original Dot class. All the colored dots are extensions of MovingDot 
+class. Polymorphism is multiple implementations for the same interface. We did this by having
+different step functions based on the type of dot was being called. Also, we had different 
+dot types within the MovingDotList in the Lab06.java class. 
+
+Post Step 4:
+My new OOP design makes adding new Dot types easier because at the point I am at in my code,
+I can just extend the Dot or moving dot class with minor changes to a new class to get
+everything working. For example, since we extended the MovingDot class, whatever child
+class of MovingDot will still have access to the same methods so we wouldn't need to make
+new methods, just tweak ones we already have. We get to write less code which is always what
+we want.
+
+The polymorphic method was used in many places throughout our program. In the Lab06 class 
+The MovingDotList doesn't just take in MovingDot instances, it actually takes in extensions
+of the MovingDot class in RedDot, GreenDot, and BlueDot. This is shown in Lab06.java lines 15-17.
+Also, the step() methods in each of the colered dot classes have different uses. So despite them 
+being the same method and extended from the same class, they have different implementations.
+
+
