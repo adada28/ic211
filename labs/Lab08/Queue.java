@@ -25,7 +25,7 @@ public class Queue {
     head = head.next;
     if( head == null ){
       tail = null;
-      throw new QueueException("dequeue clear queue");
+      throw new QueueException("dequeue empty queue");
     }
       
 
