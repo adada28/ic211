@@ -51,12 +51,32 @@ public class Lab08 {
       fname = args[1];
     }
 
-    
+    if(file == true){
+      Scanner sc = null;
+      try {
+        sc = new Scanner(new FileReader(fname));
+      } catch(IOException e) {
+        //e.printStackTrace();
+        //System.exit(1);
+        file = false;
+        System.out.println("File '" + fname + "' could not be opened; switching input to standard in.");
+        sc = new Scanner(System.in);
+      } 
+    } 
+
     do {
+      if(file == false){
+        System.out.print("> ");
+      } 
       
-      System.out.print("> ");
       
-      String cmd = sc.next();
+      String cmd = "";
+
+      try{
+        cmd = sc.next();
+      }catch(Exception e){
+        break;
+      }
       if( cmd.equals("quit") ) {
         break;
       } else if( cmd.equals("clearto") ) {
