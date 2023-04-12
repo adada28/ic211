@@ -1,58 +1,54 @@
 import java.util.*;
 
 public class Queue {
+  String[] arr = new String[1024];
+  private int head = 0;  
+  private int tail = 0;
+
   public void enqueue(String s) {
-    if( head == null ) {
-      head = tail = new Node(s, null);
+    if( arr[head] == null ) {
+      arr[head] = s;
     } else {
-      tail.next = new Node(s, null);
-      tail      = tail.next;
+      this.tail++;
+      arr[tail] = s;
     }
   }
 
   public String dequeue() {
-    Node t = head;
-    head = head.next;
+    String t = arr[head];
+    this.head++;
 
-    if( head == null ) {
-      tail = null;
+    if( arr[head] == null ) {
+      tail = head;
     }
-    return t.data;
+    return t;
   }
 
   public boolean empty() {
-    return head == null;
+    return arr[head] == null;
   }
 
   public Iter iterator() {
-    return new Iter(head);
+    return new Iter(arr,head);
   }
 
   protected class Iter {
-    private Node curr;
-    public Iter(Node start) {
+    private String[] arr;
+    private int curr;
+    public Iter(String[] arr, int start) {
+      this.arr = arr;
       curr = start;
     }
 
     public boolean hasNext() {
-      return curr != null;
+      return arr[curr] != null;
     }
 
     public String next() {
-      String s = curr.data;
-      curr = curr.next;
+      String s = arr[curr];
+      curr++;
       return s;
     }
   }
 
-  private class Node {
-    public String data;
-    public Node   next;
-    public Node(String d, Node n) {
-      data = d;
-      next = n;
-    }
-  }
-
-  private Node head = null, tail = null;
 }
