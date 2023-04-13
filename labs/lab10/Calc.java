@@ -1,5 +1,9 @@
 import java.util.*;
 
+/**
+  * Calc class that does the calculation for cost and months
+  * @author MIDN 3/C Ayoo Dada
+ */
 public class Calc{
     private double amt;
     private double rate;
@@ -14,7 +18,9 @@ public class Calc{
         this.payment = p;
     }
 
-
+    /**
+      * Method that calculates the cost
+     */
     public void cost(){
         while(amt > 0){
             months++;
@@ -27,8 +33,26 @@ public class Calc{
         cost *= 100;
         cost = Math.round(cost);
         cost /= 100;
-        System.out.println("months = " + months + " cost = " + cost);
+        //System.out.println("months = " + months + " cost = " + cost);
         
+    }
+
+    /**
+      * Getter for the cost
+      * @return String
+     */
+    public String getCost(){
+        String strcost = Double.toString(cost);
+        return strcost;
+    }
+
+    /**
+      * Getter for the months
+      * @return String    
+     */
+    public String getMonths(){
+        String strmonths = Double.toString(months);
+        return strmonths;
     }
 
     public static void main(String[] args){
