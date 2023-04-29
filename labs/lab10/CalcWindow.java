@@ -21,7 +21,7 @@ public class CalcWindow extends JFrame{
         JPanel bottom = new JPanel(new FlowLayout());
         JPanel calcbutton = new JPanel(new FlowLayout());
         this.setTitle("Dada, Ayoo - m251224");
-        this.setLocation(100, 100);
+        this.setLocation(100, 100); 
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         // Create GUI components
