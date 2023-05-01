@@ -18,12 +18,12 @@ public class CatButton extends JButton implements ActionListener{
 
     public void actionPerformed(ActionEvent e){
         Cat newCat = new Cat (300,300,rand);
-        balls.add(newCat);
+        balls.add(newCat); 
     }
 
 
 
-
+ 
 
 
 }

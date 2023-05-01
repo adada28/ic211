@@ -5,9 +5,9 @@ public class AquariumMain {
   public static void main(String[] args) {
     JFrame f     = new JFrame();
     JComponent c = new Aquariumarea();
-    Random random = new Random();
+    //Random random = new Random();
 
-    ArrayList<Species> life = new ArrayList<Species>();
+    //ArrayList<Species> life = new ArrayList<Species>();
     
     Panel p = new Panel();
 

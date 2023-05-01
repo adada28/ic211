@@ -20,7 +20,7 @@ public class ExampleDrawArea extends JComponent implements Runnable {
 
   private Random random;
 
-
+ 
   public ExampleDrawArea(ArrayList<Ball> b, Random ran) {
     super();
     setPreferredSize(new Dimension(600, 400));

@@ -16,7 +16,7 @@ public class Ball implements MouseListener {
 
   
   public Ball(double x, double y, ArrayList<Ball> b, Random ran) {
-    this.x = x;
+    this.x = x; 
     this.y = y;
 
     //This will let us add Balls to the Arraylist shared by components in the scene

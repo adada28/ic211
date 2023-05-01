@@ -23,7 +23,7 @@ public class Timer extends JFrame{
 
         this.add(x, BorderLayout.NORTH);
         x.add(lab);
-        x.add(t);
+        x.add(t); 
         x.add(b);
 
         this.pack();

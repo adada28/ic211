@@ -6,7 +6,8 @@ import java.util.*;
 public class Panel extends JPanel{
 
     public Panel(){
-         JButton start = new JButton("Start");
+         JButton start = new JButton("Feed");
+         this.add(start);
          
     }
 }

@@ -22,7 +22,7 @@ public class Cat extends Ball {
           img = ImageIO.read(new File("catr.png"));
         } catch (IOException e) {}
         w = img.getWidth();
-        h = img.getHeight();
+        h = img.getHeight(); 
         transform = new AffineTransform();
     }
     //operates exactly like a ball, but instead of drawing an ellipse, draws cat 

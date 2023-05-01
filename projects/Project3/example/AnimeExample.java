@@ -13,7 +13,7 @@ public class AnimeExample {
     
     ExampleDrawArea drawArea = new ExampleDrawArea(balls, random);
 
-    //this is an example of a panel.
+    //this is an example of a panel. 
     //just adding it here to show an example of a panel with the DrawArea
     ExamplePanel panel = new ExamplePanel(balls, random);
 
