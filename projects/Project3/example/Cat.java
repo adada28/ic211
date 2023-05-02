@@ -16,7 +16,7 @@ public class Cat extends Ball {
 
     public Cat(double x, double y, Random rand){
         super(x,y);
-        delta = 3 + rand.nextInt(8);
+        delta = 20 + rand.nextInt(8);
         //read image for cat
         try {
           img = ImageIO.read(new File("catr.png"));

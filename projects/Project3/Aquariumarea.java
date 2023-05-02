@@ -5,7 +5,8 @@ import javax.imageio.*;
 import java.awt.image.*;
 import java.io.*;
 
-public class Aquariumarea extends JComponent{
+public class Aquariumarea extends JComponent implements Runnable{
+  private 
   private BufferedImage img = null;
   public Aquariumarea() {
     super();
@@ -44,12 +45,12 @@ public class Aquariumarea extends JComponent{
     AffineTransformOp op = new AffineTransformOp(tx, AffineTransformOp.TYPE_NEAREST_NEIGHBOR);
     img = op.filter(img, null);    
 
-
+/*
     for (int i = 0; i < 24; i++) {
       g2.rotate(Math.PI / 24);
       g2.draw(new Rectangle2D.Double(0, 0, 60, 60));
     } 
     g2.setTransform(savedTf);
-  
+  */
   }
 }

@@ -5,11 +5,11 @@ public class AquariumMain {
   public static void main(String[] args) {
     JFrame f     = new JFrame();
     JComponent c = new Aquariumarea();
-    //Random random = new Random();
+    Random random = new Random();
 
-    //ArrayList<Species> life = new ArrayList<Species>();
+    ArrayList<Fish> life = new ArrayList<Fishs>();
     
-    Panel p = new Panel();
+    Panel p = new Panel(life, random);
 
     f.add(c);
     f.add(p, BorderLayout.NORTH);

@@ -22,7 +22,7 @@ public class Ball implements MouseListener {
     //This will let us add Balls to the Arraylist shared by components in the scene
     this.balls = b;
     rand =ran;
-    r = 4 + rand.nextInt(5);
+    r = 20+ rand.nextInt(5);
     //delta is speed of movement
     delta = 3 + rand.nextInt(8);
   }
